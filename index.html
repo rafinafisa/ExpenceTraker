@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <datalist id="bar">
+        <option value="Saturday"></option>
+        <option value="Sunday"></option>
+        <option value="Monday"></option>
+        <option value="Tuesday"></option>
+        <option value="Wednesday"></option>
+        <option value="Thursday"></option>
+        <option value="Friday"></option>
+    </datalist>
+
+    <div class="main">
+        <div id="inp">
+            <input id="inp1" type="text" placeholder="Expence On What" id="inpFil" value="">
+            <button style="cursor: pointer; background-color: rgb(82, 141, 82); color: white;" ; id="btn">+</button>
+            <button
+                style="cursor: pointer; font-size: 30px; position: absolute; left: 1063px; top: 5px; background-color: rgb(173, 71, 71); color: white; "
+                ; id="delBtn"><i class="far fa-trash-alt"></i></button>
+
+            <div id="inps">
+                <input type="text" placeholder="Amount" id="inp2" class="inp2" pattern="[0-9]">
+                <input type="text" placeholder="Day" id="inp3" class="inp2" list="bar">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div id="text">
+            <h1 style="font-size: 40px; color:black; ">Expences</h1>
+            <table class="tbl">
+                <tr class="tblRow" style="position: relative;">
+                    <td class="tblDa">Work</td>
+                    <td class="tblDa">Day</td>
+                    <td class="tblDa">Expence</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
